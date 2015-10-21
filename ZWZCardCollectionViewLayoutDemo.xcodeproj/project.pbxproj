@@ -13,6 +13,9 @@
 		AEA89F551BD73557007A5FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA89F531BD73557007A5FCA /* Main.storyboard */; };
 		AEA89F571BD73557007A5FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA89F561BD73557007A5FCA /* Assets.xcassets */; };
 		AEA89F5A1BD73557007A5FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA89F581BD73557007A5FCA /* LaunchScreen.storyboard */; };
+		AEA89F641BD735B4007A5FCA /* ZWZCardCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA89F631BD735B4007A5FCA /* ZWZCardCollectionViewLayout.m */; settings = {ASSET_TAGS = (); }; };
+		AEA89F671BD74102007A5FCA /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA89F661BD74102007A5FCA /* CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AEA89F6A1BD74125007A5FCA /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA89F691BD74125007A5FCA /* PhotoCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		AEA89F561BD73557007A5FCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA89F591BD73557007A5FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA89F5B1BD73557007A5FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA89F621BD735B4007A5FCA /* ZWZCardCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWZCardCollectionViewLayout.h; sourceTree = "<group>"; };
+		AEA89F631BD735B4007A5FCA /* ZWZCardCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWZCardCollectionViewLayout.m; sourceTree = "<group>"; };
+		AEA89F651BD74102007A5FCA /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		AEA89F661BD74102007A5FCA /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		AEA89F681BD74125007A5FCA /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		AEA89F691BD74125007A5FCA /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,7 @@
 		AEA89F3E1BD73557007A5FCA = {
 			isa = PBXGroup;
 			children = (
+				AEA89F611BD73566007A5FCA /* ZWZCardCollectionViewLayout */,
 				AEA89F491BD73557007A5FCA /* ZWZCardCollectionViewLayoutDemo */,
 				AEA89F481BD73557007A5FCA /* Products */,
 			);
@@ -62,6 +72,10 @@
 				AEA89F4E1BD73557007A5FCA /* AppDelegate.m */,
 				AEA89F501BD73557007A5FCA /* ViewController.h */,
 				AEA89F511BD73557007A5FCA /* ViewController.m */,
+				AEA89F651BD74102007A5FCA /* CollectionViewController.h */,
+				AEA89F661BD74102007A5FCA /* CollectionViewController.m */,
+				AEA89F681BD74125007A5FCA /* PhotoCell.h */,
+				AEA89F691BD74125007A5FCA /* PhotoCell.m */,
 				AEA89F531BD73557007A5FCA /* Main.storyboard */,
 				AEA89F561BD73557007A5FCA /* Assets.xcassets */,
 				AEA89F581BD73557007A5FCA /* LaunchScreen.storyboard */,
@@ -77,6 +91,15 @@
 				AEA89F4B1BD73557007A5FCA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEA89F611BD73566007A5FCA /* ZWZCardCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AEA89F621BD735B4007A5FCA /* ZWZCardCollectionViewLayout.h */,
+				AEA89F631BD735B4007A5FCA /* ZWZCardCollectionViewLayout.m */,
+			);
+			name = ZWZCardCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA89F6A1BD74125007A5FCA /* PhotoCell.m in Sources */,
 				AEA89F521BD73557007A5FCA /* ViewController.m in Sources */,
 				AEA89F4F1BD73557007A5FCA /* AppDelegate.m in Sources */,
+				AEA89F641BD735B4007A5FCA /* ZWZCardCollectionViewLayout.m in Sources */,
+				AEA89F671BD74102007A5FCA /* CollectionViewController.m in Sources */,
 				AEA89F4C1BD73557007A5FCA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

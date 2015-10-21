@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CollectionViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CollectionViewController *vc = segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"Horizontal"]) {
+        vc.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    } else if ([segue.identifier isEqualToString:@"Vertical"]) {
+        vc.scrollDirection = UICollectionViewScrollDirectionVertical;
+    }
 }
 
 @end
